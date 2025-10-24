@@ -8,10 +8,10 @@ def countdown(minutes):
         print(timer, end='\r')
         time.sleep(1)
         seconds -= 1
-    print("Time's up! 🎉\n")
+    print("Time's up! \n")
 
 def main():
-    print("📚 Study Timer (Pomodoro)")
+    print("Study Timer (Pomodoro)")
     work_minutes = int(input("Enter work duration in minutes: "))
     break_minutes = int(input("Enter break duration in minutes: "))
     cycles = int(input("Enter number of cycles: "))
@@ -22,7 +22,7 @@ def main():
         print(f"Cycle {i+1} - Break Time!")
         countdown(break_minutes)
 
-    print("All cycles completed! Great job! ✅")
+    print("All cycles completed! Great job!")
 
 if __name__ == "__main__":
     main()
